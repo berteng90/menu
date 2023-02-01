@@ -39,7 +39,7 @@ body {
 
 .menu-btn {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 1.5rem;
@@ -53,7 +53,7 @@ body {
 .menu-btn__lines::after {
   width: 1.5rem;
   height: 0.1rem;
-  background-color: darkgray;
+  background-color: black;
   transition: all 0.5s ease-in-out;
 }
 
@@ -67,7 +67,7 @@ body {
   transform: translateY(-0.5rem);
 }
 
-menu-btn__lines::after {
+.menu-btn__lines::after {
   transform: translateY(0.5rem);
 }
 
@@ -167,10 +167,6 @@ menu-btn__lines::after {
     width: clamp(300px, 50vw, 600px);
     padding: 0;
   }
-
-  .hero-img {
-    display: none;
-  }
 }
 
 /** For mobile devices **/
@@ -182,5 +178,15 @@ menu-btn__lines::after {
 
   .navbar a {
     font-size: 1rem;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+  .nav-menu a {
+    display: none;
+  }
+  .hero-img {
+    display: none;
   }
 }
